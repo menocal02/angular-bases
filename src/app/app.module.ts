@@ -1,16 +1,29 @@
+import { HeroesModulo } from './heroes/heroes.modulo';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+//import { AppRoutingModule } from './app-routing.module';
+import { CounterComponent } from './counter/counter.component';
+
 import { AppComponent } from './app.component';
+import { CounterModule } from './counter/counter.module';
+
+
+//import { HeroComponent } from './heroes/hero/hero.component';
+//import { ListComponent } from './heroes/list/list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+   // CounterComponent,
+   // HeroComponent,
+   // ListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    CounterModule,
+    // AppRoutingModule,
+    HeroesModulo,
   ],
   providers: [],
   bootstrap: [AppComponent]
